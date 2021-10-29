@@ -111,7 +111,7 @@ export default function useCandyMachine() {
                     treasury
                 );
 
-                const status = await awaitTransactionSignatureConfirmation(
+                const status: any = await awaitTransactionSignatureConfirmation(
                     mintTxId,
                     txTimeout,
                     connection,
